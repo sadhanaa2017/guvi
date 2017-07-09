@@ -1,0 +1,277 @@
+1: check whether number is positive or negative or zero in java
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int n;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number you want to check:");
+        n = s.nextInt();
+        if(n > 0)
+        System.out.println("The given number "+n+" is Positive");
+       else if(n < 0)
+        System.out.println("The given number "+n+" is Negative");
+       else if(n==0)
+       System.out.println("The given number "+n+" is neither Zero ");
+       else 
+       System.out.println("The given number "+n+" is neither Positive nor Negative"); 
+        }
+	}
+}
+
+2. check if number is even or odd:
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	int n;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter the number you want to check:");
+        n = s.nextInt();
+        if((n%2)==0)
+        System.out.println("The given number "+n+" is EVEN");
+       else if((n%2)!==0)
+        System.out.println("The given number "+n+" is ODD");
+       else 
+       System.out.println("The given number "+n+" is neither even nor odd ");
+       
+        }
+	}
+}
+
+3.check if character is consonant or vowel.
+
+
+import java.util.Scanner;
+class Char
+{
+	public static void main(String[ ] arg)
+	{
+	int i=0;
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter a character : ");
+	char ch=sc.next( ).charAt(0);	 
+	//char ch=sc.nextChar();
+	switch(ch)
+	{
+	 case  'a' :
+	 case 'e'  :
+	 case 'i'   :
+	 case 'o'  :
+	 case 'u'  :
+	 case  'A' :
+	 case 'E'  :
+	 case 'I'   :
+	 case 'O'  :
+	 case 'U'  :i++;
+	}
+	if(i==1)
+	System.out.println("Entered character "+ch+" is  Vowel");
+	else 
+		if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+		System.out.println("Entered character "+ch+" is Consonent");
+		else
+		System.out.println("Not an alphabet");		
+	}
+}
+
+
+4.:  character is alphabet or not
+
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	
+        //Scanner s = new Scanner(System.in);
+        
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter a character : ");
+	char ch=sc.next( ).charAt(0);
+	
+	
+		if((ch>='a'&&ch<='z')||(ch>='A'&&ch<='Z'))
+		System.out.println("Entered character "+ch+" is an alphabet");
+		else
+		System.out.println("Not an alphabet");	
+
+
+	}
+}
+5. Largest among three numbers
+/* package whatever; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner s=new Scanner(System.in);
+	int[] arr=new int[2];
+        
+     System.out.println("enter the three elements");
+     for(int i=0;i<2;i++)
+     {
+        arr[i]=s.nextInt();
+
+    }
+    if((arr[0]>arr[1])&&(arr[0]>arr[1]))
+    System.out.println("the first number is largest");
+    else if((arr[1]>arr[0])&&(arr[1]>arr[2]))
+    System.out.println("the second number is largest");
+    else if((arr[2]>arr[0])&&(arr[2]>arr[1]))
+    System.out.println("the third number is largest");
+    else if((arr[0]==arr[1])&&(arr[1]==arr[2]))
+    System.out.println("all are equal");
+    else 
+    System.out.println("wrong input");
+
+	
+
+	}
+}
+	import java.util.*;	import java.lang.*;
+	import java.io.*;
+	class Ideone
+	{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner in=new Scanner(System.in);
+	int a,b,c;
+	System.out.println("enter 3 number");	a=in.nextInt();
+	b=in.nextInt();
+	c=in.nextInt();
+	if(a>b&&a>c) System.out.println(a+"is big number");
+	else if(b>a&&b>c) System.out.println(b+"is big number");
+	else if(a==b&&a==c) System.out.println("They are all equal");
+	else System.out.println(c+"is big number");
+	}	}
+
+6.leap year or not
+
+	import java.util.*;
+	import java.lang.*;
+	import java.io.*;
+	class Ideone
+	{
+	public static void main (String[] args) throws java.lang.Exception	{
+	Scanner in=new Scanner(System.in);
+	int a;
+	System.out.println("enter a year");
+	a=in.nextInt();
+	//b=in.nextInt();
+	//c=in.nextInt();
+	if((a%4)==0) 
+	System.out.println(a+"is a leap year");
+	else if((a%4)!=0)
+	System.out.println(a+"is not a leap year");
+	else System.out.println("wrong input");
+	}
+	}
+
+7. print hello world 5 times
+/* Name of the class has to be "Main" only if the class is public. */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	    for(int i=0;i<5;i++)
+	    { 
+	    	System.out.println("HELLO WORLD");
+	    }
+    }
+}
+8. sum of n natural numbers
+/* Name of the class has to be "Main" only if the class is public. */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner in=new Scanner(System.in);
+	int a;
+	System.out.println("enter till what number you want to print the sum of natural numbers");
+	a=in.nextInt();
+	int b;
+	b=((a*(a+1))/2);
+	System.out.println("the sum of natural numbers is"+b);
+
+    }
+}
+9. sum of n natural numbers using for loop
+/* Name of the class has to be "Main" only if the class is public. */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner in=new Scanner(System.in);
+	int a,b=0;
+	System.out.println("enter till what number you want to print the sum of natural numbers");
+	a=in.nextInt();
+	for(int i=0;i<=a;i++)
+	{
+		b=b+i;
+	}
+	//int b;
+	//b=((a*(a+1))/2);
+	System.out.println("the sum of natural numbers is"+b);
+
+    }
+}
+10; count number of digits of an integer
+/* Name of the class has to be "Main" only if the class is public. */
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Ideone
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	Scanner in=new Scanner(System.in);
+	int a;
+	int i=0;
+	System.out.println("enter an integer");
+	a=in.nextInt();
+	while(a>0)
+	{
+	i++;
+	a=a/10;
+	};
+	//int b;
+	//b=((a*(a+1))/2);
+	System.out.println(i);
+
+    }
+}
